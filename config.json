@@ -1,0 +1,13 @@
+{
+  "token": "BOT_TOKEN",
+  "stats": {
+    "guild": {
+      "id": "GUILD_ID",
+      "channels": {
+        "memberCount": "CHANNEL_ID",
+        "humanCount": "CHANNEL_ID",
+        "botCount": "CHANNEL_ID"
+      }
+    }
+  }
+}
