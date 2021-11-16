@@ -1,5 +1,5 @@
 # stats-bot
-a Single-Guild stats bot for Discord Server (s)
+a Single-Guild stats bot for Discord Server (s) [ discord.js v12.5.3 ]
 # Info & Credits
 - This bot was made by [legendjs#0001](https://github.com/legend-js-dev)
 - If you use this code and / or make a video on it without credits, your video/bot will be taken down

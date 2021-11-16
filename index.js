@@ -21,10 +21,10 @@ console.log(`
 
 console.log('-------------------------------------');
 console.log(
-  '[CREDITS]: made by legend-js | https://github.com/legend-js-dev | legendjs#0001'
+  '[CREDITS]: Made by legend-js | https://github.com/legend-js-dev | legendjs#0001'
 );
 console.log('-------------------------------------');
-//this took me some time so dont you dare remove credits, if u do remove credits then you will have copy right issues.
+//this took me some time so dont you dare remove credits, if u do remove credits then you will have copyright issues.
 client.on('ready', () => {
   console.log(`[INFO]: Ready on client (${client.user.tag})`);
   console.log(
@@ -46,8 +46,8 @@ client.on('guildMemberAdd', async member => {
     bots: client.channels.cache.get(stats.guild.channels.botCount)
   };
   channels.members.setName(`Members: ${member.guild.memberCount}`).catch(err => { })
-  channels.humans.setName(`Humans: ${member.guild.members.cache.filter(x => !x.bot).size}`).catch(err => { })
-  channels.bots.setName(`Bots: ${member.guild.members.cache.filter(x => x.bot).size}`).catch(err => { })
+  channels.humans.setName(`Humans: ${member.guild.members.cache.filter(x => !x.user.bot).size}`).catch(err => { })
+  channels.bots.setName(`Bots: ${member.guild.members.cache.filter(x => x.user.bot).size}`).catch(err => { })
 });
 
 client.on('guildMemberRemove', async member => {
@@ -58,8 +58,8 @@ client.on('guildMemberRemove', async member => {
     bots: client.channels.cache.get(stats.guild.channels.botCount)
   };
   channels.members.setName(`Members: ${member.guild.memberCount}`).catch(err => { })
-  channels.humans.setName(`Humans: ${member.guild.members.cache.filter(x => !x.bot).size}`).catch(err => { })
-  channels.bots.setName(`Bots: ${member.guild.members.cache.filter(x => x.bot).size}`).catch(err => { })
+  channels.humans.setName(`Humans: ${member.guild.members.cache.filter(x => !x.user.bot).size}`).catch(err => { })
+  channels.bots.setName(`Bots: ${member.guild.members.cache.filter(x => x.user.bot).size}`).catch(err => { })
 });
 
 client.login(token).catch(err => {
